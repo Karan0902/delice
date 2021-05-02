@@ -1,0 +1,635 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FBBEBE !important;
+}
+
+.navbar-custom{
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-weight: 500;
+    height: fit-content;
+    justify-content: space-between !important;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky + .navbar-custom {
+    padding-top: 60px;
+}
+
+
+/* 
+==========================================
+                LOGO STYLES
+==========================================
+*/
+.logo{
+    padding: 0;
+    margin-left: 2%;
+}
+
+.logo a{
+    text-align: center;
+    color: black;
+    font-size: 2.25rem;
+    margin: 0;
+
+}
+
+.logo .logo-text{
+    text-align: right;
+    font-size: 0.75rem;
+    margin-top: -20%;
+    color: #FBBEBE;
+    font-weight: bolder;
+}
+
+
+/* 
+===========================================
+             NAV LINKS STYLES
+==========================================
+*/
+.links-div{
+    width: 30%;
+}
+
+.links-div ul {
+    justify-content: space-between;
+    
+}
+
+.links-div ul li:nth-child(2) a{
+    color: #FBBEBE;
+}
+
+.links-div a{
+    color: black;
+}
+
+
+/*  
+============================================
+                LOGIN BUTTON
+============================================
+*/
+
+.login-button{
+    background-color: #FBBEBE;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.25);
+    margin-right: 2%;
+}
+
+.login-button a{
+    color: black;
+}
+
+
+/*  
+==============================================
+        LANDING TEXT
+============================================= 
+*/
+
+.container{
+    align-content: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 !important;
+
+    /* border: 2px solid black; */
+}
+
+.landing-text-div{
+    background-color: #FBBEBE;
+    font-family: 'Montserrat', sans-serif;
+    width: 55%;
+    text-align: center;
+
+    
+
+}
+
+.landing-text-div .landing-text{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.landing-text-div p{
+    font-size: 1.75rem;
+}
+
+            /*  
+            =======================
+                LANDING IMAGES
+            =======================
+            */
+
+             
+.container .img-div{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+
+    /* border: 2px solid black; */
+}
+
+.container .img-div embed{
+    margin-top: 5%;
+    width: 80%;
+}
+
+@media (max-width: 500px) {
+
+    .container .img-div{
+        display: flex;
+    }
+    .container .img-div embed:nth-child(1){
+        display: none;
+    }
+
+    .container .img-div embed{
+        justify-content: center;
+        width: 200px;
+    }
+}
+
+
+            /* 
+            =========================
+                FOOTER TRIANGLE         
+            ========================= 
+            */
+.foot-div{
+    display: block;
+    overflow: hidden;
+}
+
+.foot{
+    display: block;
+    margin: 0;
+    width: 102%;
+    height: auto;
+}
+
+
+/* 
+============================
+    PAGE 2: ABOUT PAGE
+============================
+*/
+
+.second-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 4%;
+    overflow: hidden;
+}
+
+    /* 
+    ==================================
+        ABOUT TEXT AND IMAGE GRID
+    ==================================
+    */
+.about-container{
+    display: grid;
+    margin: 0 4%;
+    grid-template-columns: 70% auto;
+
+    background-color: white;
+    border-radius: 42px;
+    height:fit-content;
+}
+
+.about-text-div{
+    background-color: #FBBEBE;
+    margin-right: 2%;
+    border-radius: 42px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding: 30px;
+}
+
+        /* 
+        =====================================
+                    ABOUT TEXT
+        =====================================
+        */
+
+.about-text-div .who-we-are{
+    border-radius: 42px;
+    padding: 20px;
+    margin-right: 3%;
+    background: rgb(252,249,171);
+    background: linear-gradient(180deg, rgba(252,249,171,1) 0%, rgba(245,245,245,1) 100%);
+    text-align: center;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.about-text-div .what-we-do{
+    border-radius: 42px;
+    padding: 20px;
+    margin-left: 3%;
+    background: rgb(252,249,171);
+    background: linear-gradient(180deg, rgba(252,249,171,1) 0%, rgba(245,245,245,1) 100%);
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-text-div h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.about-text-div p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+        /* 
+        =====================================
+                    ABOUT IMAGE
+        =====================================
+        */
+.about-image-div{
+    margin-left: 2%;
+    
+}
+
+.about-image-div img{
+    width: 95%;
+    border-radius: 42px;
+    float: right;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+        /* 
+        =========================
+            FOOTER TRIANGLE         
+        ========================= 
+        */
+.second-foot-div{
+    bottom: 0;
+    margin-top: 4%;
+    display: block;
+    overflow: hidden;
+    
+}
+
+.second-foot{
+    display: block;
+    margin: 0;
+    width: 102%;
+    height: auto;
+}
+
+
+    /* 
+    ======================================
+        RESPONSIVE DESIGN FOR PAGE 2
+    ======================================
+    */
+@media (max-width: 1000px){
+    .about-container{
+        display: grid;
+        margin: 0 4%;
+        grid-template-columns: 1fr;
+        background-color: white;
+        border-radius: 42px;
+        height:fit-content;
+    }
+
+    .about-image-div{
+        display: none;
+        
+    }
+    
+    .about-image-div img{
+        display: none;
+    }
+}
+
+
+/* 
+============================
+    PAGE 3: MENU PAGE
+============================
+*/
+
+.third-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FBBEBE;
+    margin: 0;
+    padding: 0;
+    padding-top: 4%;
+    height: fit-content;
+}
+
+.menu-container{
+    display: grid;
+    margin: 0 4%;
+    grid-template-rows: 1fr 1fr;
+    height:fit-content;
+}
+
+    /*
+    ========================
+        MENU GRID DESIGN
+    ========================
+    */
+
+
+.first-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+}
+
+
+.first-row div img{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px 0;
+}
+
+.second-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+}
+
+.second-row div img{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px 0;
+}
+
+/* .third-foot-div{
+    display: block;
+    overflow: hidden;
+    border: 2px solid black;
+    
+}
+
+.third-foot{
+    display: block;
+    margin: 0;
+    width: 102%;
+    height: auto;
+} */
+
+
+    /* 
+    ==================================
+        RESPONSIVE DESIGN FOR PAGE 3
+    ==================================
+    */
+
+@media (max-width: 500px) {
+
+    .menu-container{
+        display: grid;
+        margin: 0 4%;
+        grid-template-rows: 1fr 1fr;
+        height:fit-content;
+    }
+
+    .first-row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .second-row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* 
+============================
+    PAGE 4: CONTACT PAGE
+============================
+*/
+
+.fourth-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #FBBEBE;
+    height: 90vh;
+}
+
+    /* 
+    ==============================
+        CONTACT INFO: LEFT COLUMN
+    ==============================
+    */
+
+.contact-container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: start;
+    padding: 0 10%;
+}
+
+.text-container h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.text-container p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+        /* 
+        ============================
+            ROW with ICONS
+        ============================
+        */
+
+.contact-info{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 5%;
+}
+
+            /* 
+            ===========================
+                PHONE ICON AND TEXT
+            ===========================
+            */
+.phone-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.phone-div embed{
+    width: 8%;
+    margin-right: 2%;
+}
+
+.phone-div h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+            /* 
+            ===========================
+                MAIL ICON WITH TEXT
+            ===========================
+            */
+.mail-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.mail-div embed{
+    width: 8%;
+    margin-right: 2%;
+}
+
+.mail-div h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+            /* 
+            ===========================
+                IG ICON WITH TEXT
+            ===========================
+            */
+.ig-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.ig-div embed{
+    width: 8%;
+    margin-right: 2%;
+}
+
+.ig-div h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+
+    /* 
+    ==============================
+        FORM INFO: RIGHT COLUMN
+    ==============================
+    */
+.form-container{
+    background-color: #FBBEBE;
+    position: relative;
+    z-index: 1;
+    border: 1px solid black;
+    width: 40%;
+    height: 90%;
+    padding: 2%;
+}
+
+.form-container .form-group input{
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.form-control{
+    height: 3rem !important;
+}
+
+.form-group textarea{
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border: none !important;
+    padding: 2% 0 0 2%;
+}
+
+.form-container button{
+    width: 100%;
+    border: none;
+    height: 50px;
+    background-color: #FB6767;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+
+.white-div{
+    flex-grow: 4;
+    position: relative;
+    top: -20%;
+    background-color: white;
+    z-index: 0;
+}
+
+.footer{
+    padding: 0.1% 5%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer h1{
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+.footer p{
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin: 0;
+}
